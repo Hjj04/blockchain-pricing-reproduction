@@ -28,7 +28,7 @@ data/eua-dataset/.git/
 ._*
 
 # Outputs
-*.png
-*.pdf
-results/
+results/*.png
+results/*.pdf
+!results/.gitkeep
 data/eua-dataset/

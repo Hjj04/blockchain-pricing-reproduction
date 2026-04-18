@@ -1,0 +1,2 @@
+# 此文件用于保持 results/ 目录在 git 中被追踪
+# 实际的图片文件会被 .gitignore 忽略
