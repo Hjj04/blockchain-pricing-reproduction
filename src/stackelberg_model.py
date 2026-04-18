@@ -58,8 +58,9 @@ def run_stackelberg(Q, c, p_max=10.0, x_min=0.0, x_max=15.0, mu=0.01, max_iter=1
     """Algorithm 1: Stackelberg纳什均衡梯度迭代算法"""
     N = len(Q)
 
-    # 初始化：价格取成本与最高价的中间值
-    p = (c + p_max) / 2.0
+    # 初始化：价格从最高价的50%开始（匹配论文图9的初始值约5.0）
+    # 论文图9显示价格从5-6开始平滑下降，采用统一的高初始价格
+    p = np.ones(N) * (p_max * 0.5)
     y = 1.0 / p
     x = np.maximum(Q / p - 1.0, 0.0)
 
