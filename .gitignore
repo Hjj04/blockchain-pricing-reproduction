@@ -31,3 +31,4 @@ data/eua-dataset/.git/
 *.png
 *.pdf
 results/
+data/eua-dataset/
